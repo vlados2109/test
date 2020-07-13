@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="20.001" viewBox="0 0 20.001 20.001">
+  <g id="clock-circular-outline_3_" data-name="clock-circular-outline (3)" transform="translate(-1409 -1442)">
+    <g id="clock-circular-outline_3_2" data-name="clock-circular-outline (3)" transform="translate(1409 1442)">
+      <path id="Forma_1" data-name="Forma 1" d="M0,10A10,10,0,1,1,10,20,10.012,10.012,0,0,1,0,10Zm2.128,0A7.873,7.873,0,1,0,10,2.128,7.881,7.881,0,0,0,2.127,10Zm7.767,1.338a.823.823,0,0,1-.824-.823V4.288a.823.823,0,0,1,1.647,0v5.4h4.494a.823.823,0,1,1,0,1.647Z"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1409,1452a10,10,0,1,1,10,10A10.012,10.012,0,0,1,1409,1452Zm2.128,0a7.873,7.873,0,1,0,7.873-7.872A7.881,7.881,0,0,0,1411.127,1452Zm7.767,1.338a.824.824,0,0,1-.823-.823v-6.227a.823.823,0,0,1,1.647,0v5.4h4.494a.823.823,0,0,1,0,1.647Z" fill="#333"/>
+  </g>
+</svg>

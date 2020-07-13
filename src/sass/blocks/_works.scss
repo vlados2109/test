@@ -1,0 +1,27 @@
+.works {
+    padding: 100px 0 168px 0;
+    background-color: $background;
+    text-align: center;
+}
+.slider {
+    position: relative;
+    .slick-arrow {
+        position: absolute;
+        bottom: -68px;
+        z-index: 10;
+        font-size: 0;
+        width: 45px;
+        height: 19px;
+        border:none;
+    }
+    .slick-prev {
+        left: 50%;
+        transform: translateX(-60px);
+        background: url(../img/slider/arrow-pref.png) 0 0 / 100% no-repeat;
+    }
+    .slick-next {
+        right: 50%;
+        transform: translateX(60px);
+        background: url(../img/slider/arrow-next.png) 0 0 / 100% no-repeat;
+    }
+}

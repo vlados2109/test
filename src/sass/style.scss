@@ -1,0 +1,90 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/variables';
+@import 'libs/fonts';
+
+* {
+    font-family: MuseoSansCyrl;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    &_fr {
+        width: 70%;
+        float: right;
+    }
+    &_fl {
+        width: 70%;
+        float: left;
+    }
+}
+@media (max-width:1200px) {
+    .container {
+        width: 80%;
+    }
+}
+@media (max-width:991px) {
+    .container {
+        width: 640px;
+        &_fr {
+            width: 640px;
+            float: none;
+            margin: 0 auto;
+            overflow: hidden
+        }
+        &_fl {
+            width: 640px;
+            margin: 0 auto;
+            float: none;
+            overflow: hidden
+        }
+    }
+}
+@media (max-width:767px) {
+    .container {
+        width: 440px;
+        &_fr {
+            width: 440px;
+            float: none;
+            margin: 0 auto;
+            overflow: hidden
+        }
+        &_fl {
+            width: 440px;
+            margin: 0 auto;
+            float: none;
+            overflow: hidden
+        }
+    }
+}
+@media (max-width:575px) {
+    .container {
+        width: 80%;
+        &_fr {
+            width: 80%;
+            float: none;
+            margin: 0 auto;
+            overflow: hidden
+        }
+        &_fl {
+            width: 80%;
+            margin: 0 auto;
+            float: none;
+            overflow: hidden
+        }
+    }
+}
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/key';
+@import 'blocks/title';
+@import 'blocks/design';
+@import 'blocks/form';
+@import 'blocks/works';
+@import 'blocks/price';
+@import 'blocks/steps';
+@import 'blocks/wholesale';
+@import 'blocks/documents';
+@import 'blocks/question';
+@import 'blocks/request';
+@import 'blocks/map';
+@import 'blocks/contacts';

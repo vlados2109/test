@@ -1,0 +1,90 @@
+.question {
+    display: block;
+    width: 50%;
+    min-height: 660px;
+    padding: 97px 0 92px 0;
+    background-color:$second-color;
+    float: left;
+    text-align: left;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 22px;
+        color: $main-title;
+        margin-bottom: 50px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        color: $main-title;
+        margin-bottom: 94px;
+    }
+    &__list {
+        display: inline-block;
+        counter-reset: myCounter;
+        list-style-type: none;
+        padding-left: 52px;
+        margin: 0;
+        li {
+            font-size: 18px;
+            font-weight: 500;
+            color: $main-title;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 33px;
+            }
+            &::after {
+                counter-increment: myCounter;
+                content:counter(myCounter);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $main-title;
+                width: 35px;
+                height: 35px;
+                border: solid 2px $main-title;
+                border-radius: 100%;
+                position: absolute;
+                left: -52px;
+                top: 0;
+            }
+        }
+    }
+}
+@media (max-width:1200px) {
+    .question {
+        &__title {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        &__list {
+            li {
+                font-size: 14px;
+                font-weight: 500;
+                color: $main-title;
+                position: relative;
+                &:not(:last-child) {
+                    margin-bottom: 23px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:991px) {
+    .question {
+        width: 100%;
+        float: none;
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 22px;
+        }
+        &__list {
+            li {
+                font-size: 22px;
+            }
+        }
+    }
+}

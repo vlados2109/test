@@ -1,0 +1,67 @@
+.request {
+    display: block;
+    width: 50%;
+    min-height: 660px;
+    padding: 110px 0 100px 0;
+    background: url(../img/background.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    float: right;
+    &__wrap {
+        float: right;
+        text-align: center;
+    }
+    &__btn {
+        width: 368px;
+        height: 70px;
+        margin-bottom: 33px;
+    }
+    &__title {
+        font-size: 22px;
+        color: $main-title;
+        margin-bottom: 52px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        color: $main-title;
+        margin-bottom: 49px;
+    }
+}
+@media (max-width:1200px) {
+    .request {
+        &__wrap {
+            float: right;
+            text-align: center;
+        }
+        &__title {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        &__btn {
+            width: 70%;
+        }
+    }
+}
+@media (max-width:991px) {
+    .request {
+        width: 100%;
+        float: none;
+        &__wrap {
+            float: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__title {
+            font-size: 22px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.documents {
+    padding-bottom: 228px;
+    text-align: center;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        a {
+            display: block;
+            width: 100%;
+        }
+        img {
+            margin-bottom: 68px;
+            border: solid 20px $background;
+            &:hover {
+                box-shadow: 0 20px 35px rgba($color: black, $alpha: 0.5);
+                transition: all 0.5s;
+            }
+        }
+    }
+    &__descr {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        text-align: center;
+        color: $main-title;
+    }
+}
+@media (max-width:991px) {
+    .documents {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width:767px) {
+    .documents {
+        padding-bottom: 90px;
+    }
+}

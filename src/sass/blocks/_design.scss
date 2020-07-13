@@ -1,0 +1,44 @@
+.design {
+    padding: 84px 0 92px 0;
+    position: relative;
+    overflow: hidden;
+    &__btn {
+        display: block;
+        width: 495px;
+        height: 70px;
+        font-size: 16px;
+        margin-bottom: 31px;
+    }
+    &__img {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+}
+@media (max-width:1200px) {
+    .design {
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        &__btn {
+            width: 70%;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width:767px) {
+    .design {
+        &__wrap {
+            width: 100%;
+        }
+        img {
+            display: none;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
